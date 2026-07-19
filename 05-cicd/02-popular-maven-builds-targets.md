@@ -44,3 +44,37 @@ Here are 5 Maven build targets I commonly use in my day-to-day workflow:
 > The most frequently used Maven targets in my daily work include: `clean`, `compile`, `test`, `package`, and `install`. They ensure a complete and reliable build pipeline from development to artifact distribution.
 
 ---
+
+The 5 core build targets used across almost all Gradle projects are:
+
+---
+
+### 1. build
+- **Purpose:** Performs a complete project assembly and validation.
+- **Action:** Compiles production code, processes resources, runs all unit tests, and packages the final binaries (such as a JAR, WAR, or APK) into the build directory.
+
+---
+
+### 2. assemble
+- **Purpose:** Compiles and packages artifacts without running verification tests.
+- **Action:** Speeds up development cycles by skipping the test suite. It focuses purely on generating the main outputs like executables or libraries.
+
+---
+
+### 3. clean
+- **Purpose:** Deletes the local build outputs to reset the environment.
+- **Action:** Erases the entire build directory. This removes all previously compiled class files, cached data, and generated artifacts to guarantee that the next run is a completely fresh build.
+
+---
+
+### 4. check
+- **Purpose:** Runs all quality assurance and verification tasks.
+- **Action:** Executes every unit test, code coverage analysis, and linting tool (such as SpotBugs, PMD, or Checkstyle) configured in the project. It ensures the code meets safety and quality standards before deployment.
+
+---
+
+### 5. publish
+- **Purpose:** Distributes the finalized build artifacts to external environments.
+- **Action:** Uploads the compiled packages and metadata files (like Maven POMs or Gradle Module Metadata) to a specified local or remote repository, such as Maven Central or a private Nexus instance.
+
+---
